@@ -1,0 +1,56 @@
+/* tags */
+/* html */
+html{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip: auto;
+    overflow: hidden;
+}
+/* body */
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #000000;
+}
+/* ids */
+/* center */
+#heading{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    font-family: Savoye LET;
+    color: #ffffff;
+}
+/* classes */
+/* image */
+.image{
+    position: absolute;
+    bottom: 0px;
+    width: 200px;
+    height: 200px;
+    border: none;
+    animation-name: firework;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* keyframes */
+@keyframes firework{
+    0%{bottom: -100px; background-image: url(rocket.png)}
+    80%{bottom: 500px; background-image: url(rocket.png)}
+    85%{bottom: 500px; background-image: url(firework1.png)}
+    90%{bottom: 500px; background-image: url(firework2.png)}
+    95%{bottom: 500px; background-image: url(firework3.png)}
+    100%{bottom: 500px; background-image: url(firework3.png)}
+}
